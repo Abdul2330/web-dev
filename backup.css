@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(13, 12, 18);
+    color:white;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: transparent;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.purple{
+    color:rgb(162, 88, 255)
+}
+nav ul{
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+nav a:hover{
+    color:rgb(162, 88, 255)
+}
+.btn-primary{
+    background:rgb(92, 3, 202);
+       color: white;
+       padding:10px 20px;
+       border-radius:2px;
+       text-decoration: none;
+
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+}
+
+/* Hero Section */
+
+.hero{
+    position: relative;
+    text-align: center;
+    padding: 0px 20px 60px;
+      background: rgb(13, 12, 18);
+      overflow: hidden;
+
+}
+
+.hero h1{
+    font-size: 55px;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+.hero .white{
+    color:white
+}
+.hero p{
+    max-width: 600px;
+    margin:0 auto 30px;
+    color:#aaa;
+}
+.hero-btns{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    padding-right:20px;
+    margin-top: 80px;
+}
+.btn-Outline {
+  border: 1px solid #757373;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+.btn-primary, .btn-Outline {
+  padding: 12px 40px 12px 20px;
+  min-width: 180px;
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-Outline i{
+    margin-left:8px;
+}
+.glow-top-right,
+.glow-bottom-left{
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(78, 13, 158, 0.4) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.glow-top-right{
+    top: -50px;
+    right: 100px;
+}
+.glow-bottom-left{
+    bottom: -50px;
+    left: 60px;
+     position: absolute;
+  width: 500px;  
+  height: 340px; 
+  
+  background: radial-gradient(circle, rgba(56, 36, 80, 0.4) 0%, transparent 70%);
+  
+  pointer-events: none;
+  z-index: 0;
+}
+/* Stats Section */
+.stats{
+    margin-top: -65px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 130px;
+    padding: 40px 20px;
+    z-index: 2;
+}
+.stat{
+    text-align: center;
+}
+.stats .numbers{
+    font-size: 30px;
+    font-weight: bold;
+      color: rgb(162, 88, 255);
+      
+}
+.stat p{
+    color:#aaa
+}
+
+/* Services Section */
+.services{
+    padding: 80px 20px;
+    position: relative;
+    background-color: #0d0c12;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header h2{
+    font-size: 36px;
+    color: white;
+}
+.section-header .purple{
+    color: rgb(162, 88, 255);
+}
+.section-header p{
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+/* Service cards */
+.service-grid{
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+
+}
+
+.servicecard{
+    background-color: rgb(28, 27, 35);
+    border: 1px solid #333;
+    padding:30px;
+    border-radius: 2px;
+    color: white;
+}
+.servicecard .icon{
+    font-size: 20px;
+    background-color:rgb(53, 31, 80) ;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(79, 2, 173) ;
+    margin-bottom: 20px;
+}
+.servicecard h3{
+    margin-bottom: 10px;
+}
+.servicecard p{
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.servicecard a i{
+    margin-left: 20px;
+}
+
+/* Scroll to top */
+.scroll-top{
+    position: absolute;
+    top: 130px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(160, 106, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+/* responsive code */
+/* Header section */
+
+
